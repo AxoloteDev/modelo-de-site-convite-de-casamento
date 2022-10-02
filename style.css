@@ -1,0 +1,276 @@
+/* Importações */
+
+/* Fontes */
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+/* Regras */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variaveis */
+
+:root {
+  --cor0: #000000;
+  --cor1: #f3e2e2;
+  --cor2: #ffffff;
+  --cor3: #b3abab;
+  --cor4: #797979;
+  --cor5: #ffdddd;
+
+  --font: "Raleway", sans-serif;
+}
+
+/* Partes */
+
+body {
+  background-color: var(--cor1);
+  font-size: 16px;
+}
+
+/* Navegação */
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+nav:hover {
+  background-color: var(--cor2);
+}
+
+nav a {
+  padding: 20px;
+  margin: 0px 10px 0px 10px;
+  font: normal 1em var(--font);
+  width: 150px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--cor0);
+}
+
+nav a:hover {
+  background-color: var(--cor3);
+}
+
+#rsvp:hover {
+  background-color: var(--cor0);
+  color: var(--cor2);
+}
+
+/* Cabeçalho */
+
+header {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  background-image: url("imgs/casamento.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+}
+
+header h1 {
+  color: var(--cor2);
+  text-align: center;
+  font: normal 4.3em var(--font);
+}
+
+header h2 {
+  color: var(--cor2);
+  text-align: center;
+  font: normal 2em var(--font);
+  margin-top: 20px;
+}
+
+/* Principal */
+
+main {
+  height: 100%;
+}
+
+main h1 {
+  font: normal 2.2em var(--font);
+  color: var(--cor4);
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 55px;
+}
+
+main img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+main p {
+  text-align: justify;
+  font: italic 1em var(--font);
+  line-height: 35px;
+  margin: 60px 15px 40px 15px;
+  max-width: 1000px;
+  padding: 5px;
+}
+
+main a {
+  display: block;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 70px;
+  background-color: var(--cor0);
+  color: var(--cor2);
+  width: 250px;
+  padding: 20px;
+  border-radius: 5px;
+  font: normal 1em var(--font);
+  text-decoration: none;
+}
+
+main a:hover {
+  color: var(--cor0);
+  background-color: var(--cor3);
+}
+
+/* principal > Segunda parte */
+
+#segundaparte {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  background-image: url("imgs/flores.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+}
+
+#segundaparte h1 {
+  color: var(--cor2);
+  font: normal 4.3em var(--font);
+  margin: 0;
+}
+
+#segundaparte h2 {
+  color: var(--cor2);
+  font: normal 2.5em var(--font);
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Principal > informações */
+
+#info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#info h1 {
+  margin: 80px auto 20px auto;
+  color: var(--cor0);
+  width: 270px;
+}
+
+#info p {
+  text-align: center;
+  margin: auto;
+}
+
+/* Outra parte */
+
+aside {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: var(--cor5);
+  justify-content: center;
+}
+
+aside h1 {
+  text-align: center;
+  color: var(--cor0);
+  margin-bottom: 35px;
+}
+
+aside h3 {
+  color: var(--cor0);
+  font: normal 1em var(--font);
+  text-align: center;
+}
+
+aside a {
+  margin-top: 30px;
+  background-color: #f88078;
+  cursor: pointer;
+}
+
+/* Rodapé */
+
+footer {
+  background-color: var(--cor0);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 130px;
+  padding: 5px;
+}
+
+footer p {
+  margin: 10px auto 0px auto;
+  width: 250px;
+  color: var(--cor2);
+  padding: 10px;
+  font: normal 0.9em var(--font);
+  text-align: center;
+}
+
+footer a {
+  color: var(--cor2);
+  padding: 10px;
+  font: normal 0.9em var(--font);
+}
+
+/* Rodapé > creditos */
+
+#axolote:hover {
+  color: #ff0080;
+  text-decoration: underline;
+}
+
+#w3c:hover {
+  color: #3d8d40;
+  text-decoration: underline;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 670px) {
+  /* Partes */
+
+  body {
+    font-size: 14px;
+  }
+
+  /* Navegação */
+
+  nav {
+    display: none;
+  }
+
+  /* Rodapé */
+
+  footer {
+    height: 100px;
+  }
+}
